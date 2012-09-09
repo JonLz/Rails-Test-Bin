@@ -1,5 +1,9 @@
 TestBin::Application.routes.draw do
   root :to => "static_pages#home"
+  
+  match '/blackjack',         to: "blackjack#blackjack"
+  #match '/blackjack/create',  to: "blackjack#create"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

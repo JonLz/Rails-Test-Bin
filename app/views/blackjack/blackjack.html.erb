@@ -1,0 +1,13 @@
+<% provide(:title, 'Blackjack Test') %>
+<h1>Sample Blackjack App</h1>
+
+<%= form_tag do %>
+  <%= label_tag("Enter a number:") %>
+  <%= text_field_tag(:qqq) %>
+  <%= text_field_tag(:qqq2) %>
+  <%= submit_tag("Create") %>
+
+<br> <%= params[:qqq] %>
+<br> <%= params[:qqq2] %>
+  
+<% end %>
